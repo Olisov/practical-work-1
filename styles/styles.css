@@ -1,0 +1,146 @@
+.header--center, 
+.main--center {
+    margin: 0 auto;
+}
+
+html {
+    font-family: 'TTLakes', 'Times New Roman', serif;
+}
+
+.menu {
+    padding: 0;
+}
+
+.header {
+    width: 320px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    border-bottom: 1px solid #D9FFF5;
+    padding: 16px;
+}
+
+.menu {
+    width: 320px;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 320px;
+    box-sizing: border-box;
+}
+
+.header__group-items {
+    display: flex;
+    align-items: center;
+
+
+    /* border: 1px solid black; */
+}
+
+.header-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+
+.header__group-items:last-child::before {
+    content: "";
+    transform: translateX(-20px);
+	height: 32px;
+    width: 2px;
+    background-color: #EAEAEA;
+    border-radius: 1px;
+}
+
+.header-btn--pink {
+    background-color: #FF3E79;
+}
+.header-btn--pink:not(:last-child) {
+    margin-right: 16px;
+}
+
+.burger-menu-btn {
+    background-image: url("/img/burger-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.request-btn {
+    background-image: url("/img/request.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.repair-status-btn {
+    background-image: url("/img/repair-status.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.phone-btn, 
+.message-btn, 
+.login-btn,
+.page-headline__item
+ {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.menu__item {
+    text-decoration: none;
+}
+
+.page-headline__title {
+    font-family: 'TTLakes-bold';
+    box-sizing: border-box;
+    font-size: 28px;
+    /* font-weight: bold; */
+    padding-top: 10px;
+    padding-left: 16px;
+    border-left: 4px solid red;
+
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-btn:hover {
+    background-color: green;
+}
+.header-btn:focus {
+    background-color: black;
+}
+.header-btn:active {
+    background-color: yellow;
+}
