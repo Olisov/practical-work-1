@@ -1,7 +1,13 @@
-.header--center, 
+:root {
+    --window-width: 768px;
+}
+
+/* .header--center, 
 .main--center {
     margin: 0 auto;
-}
+} */
+
+
 
 html {
     font-family: 'TTLakes', 'Times New Roman', serif;
@@ -14,32 +20,28 @@ html {
 }
 
 .header {
-    width: 320px;
+    width: var(--window-width);
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid red; */
     border-bottom: 1px solid #D9FFF5;
     padding: 1rem;
 }
 
 .menu {
-    width: 320px;
+    width: var(--window-width);
     box-sizing: border-box;
 }
 
 .main {
-    width: 320px;
+    width: var(--window-width);
     box-sizing: border-box;
 }
 
 .header__group-items {
     display: flex;
     align-items: center;
-
-
-    /* border: 1px solid black; */
 }
 
 .header-btn {
@@ -67,20 +69,23 @@ html {
     margin-right: 1rem;
 }
 
+
+
 .burger-menu-btn {
     background-image: url("/img/burger-menu.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .request-btn {
     background-image: url("/img/request.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .repair-status-btn {
     background-image: url("/img/repair-status.svg");
+}
+
+.burger-menu-btn,
+.request-btn,
+.repair-status-btn {
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -103,12 +108,11 @@ html {
     font-family: 'TTLakes-bold', sans-serif;
     box-sizing: border-box;
     vertical-align: end;
-    font-size: 28px;
+    font-size: 1.75rem;
     margin: 0;
     padding-top: 10px;
     padding-left: 12px;
     letter-spacing: -0.025em;
-
     margin-bottom: 19px;
 }
 
@@ -128,7 +132,6 @@ html {
 .menu {
     display: flex;
     box-sizing: border-box;
-    /* border: 1px solid black; */
     overflow: auto;
     padding: 0.5rem 1rem;
 }
@@ -152,7 +155,6 @@ html {
     line-height: 225%;
     border-radius: 5px;
     padding: 0 15px;
-
     border: 2px solid #B8FFEC;
 }
 
@@ -176,9 +178,8 @@ html {
     line-height: 128%;
     letter-spacing: 0.01em;
     color: #1b1c21;
-
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .description__item {
@@ -207,11 +208,26 @@ html {
 }
 
 
+/* @media screen, (min-width: 768px) and (max-width: 1119px) { */
+@media screen, (min-width: 768px)  {
+    
+    .about-us {
+        flex-direction: row;
+        /* background-color: red; */
+        padding-bottom: 2rem;
+    }
+
+    .description__paragraph {
+        /* width: 50%; */
+    }
+
+    .about-us__figure {
+        width: 360px;
+        height: 208px;
+    }
 
 
-
-
-
+}
 
 
 
