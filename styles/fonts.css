@@ -28,7 +28,7 @@
 
 
 @font-face {
-    font-family: "TTLakesCond-Medium";
+    font-family: "TTLakesCond-medium";
     font-display: swap;
     src: local(""), url("../fonts/TTLakesCondensed-Medium.ttf") format("woff"),
                     url("../fonts/TTLakesCondensed-Medium.ttf") format("ttf");
