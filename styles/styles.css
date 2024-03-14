@@ -57,27 +57,27 @@ h1, h2, h3 {
 }
 
 .func-btn--burger-menu {
-    background-image: url("/img/burger-menu.svg");
+    background-image: url("../img/burger-menu.svg");
 }
 
 .func-btn--repair-status {
-    background-image: url("/img/repair-status.svg");
+    background-image: url("../img/repair-status.svg");
 }
 
 .func-btn--phone {
-    background-image: url("/img/handset.svg");
+    background-image: url("../img/handset.svg");
 }
 
 .func-btn--message {
-    background-image: url("/img/message.svg");
+    background-image: url("../img/message.svg");
     background-position-y: 11px;
 }
 .func-btn--login {
-    background-image: url("/img/login.svg");
+    background-image: url("../img/login.svg");
 }
 
 .func-btn--request {
-    background-image: url("/img/request.svg");
+    background-image: url("../img/request.svg");
 }
 
 .func-btn--request:first-child:before {
@@ -218,7 +218,7 @@ h1, h2, h3 {
     float: left;
     width: 8px;
     height: 10px;
-    background-image: url(/img/double_arrows.svg);
+    background-image: url("../img/double-arrows.svg");
     transform: translate(9px, 6px);
 }
 
