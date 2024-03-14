@@ -10,45 +10,49 @@
 
 </head>
 <body>
-    <header class="header header--center">
-            <div class="header__group-items">
-                <button class="header-btn header-btn--pink burger-menu-btn"></button>
-                <img class="logo" src="img/logo.svg" alt="logo cps" width="97" height="51">
-            </div>
-            <div class="header__group-items">
-                <button class="header-btn header-btn--pink phone-btn"></button>
-                <button class="header-btn header-btn--pink message-btn"></button>
-                <button class="header-btn header-btn--pink login-btn"></button>
-            </div>
-            <div class="header__group-items">
-                <button class="header-btn header-btn--pink request-btn"></button>
-                <button class="header-btn header-btn--pink repair-status-btn"></button>
-            </div>
+    <header class="header">
+        <div class="header__group-items">
+            <button class="func-btn func-btn--burger-menu func-btn--pink"></button>
+            <img class="logo" src="img/logo.svg" alt="logo cps" width="97" height="51">
+        </div>
+        <div class="header__group-items">
+            <button class="func-btn func-btn--phone func-btn--pink"></button>
+            <button class="func-btn func-btn--message func-btn--pink"></button>
+            <button class="func-btn func-btn--login func-btn--pink"></button>
+        </div>
+        <div class="header__group-items">
+            <button class="func-btn func-btn--request func-btn--pink"></button>
+            <button class="func-btn func-btn--repair-status func-btn--pink"></button>
+        </div>
     </header>
 
-    <main class="main main--center">
-        <div class="page-headline page-headline--center">
-            <h1 class="page-headline__title">Услуги и сервисы</h1>
-            <menu class="menu">
-                <a class="menu__item" href="#">Ремонтируемые устройства</a>
-                <a class="menu__item" href="#">Дополнительные услуги</a>
-                <a class="menu__item" href="#">Цены на услуги</a>
-                <a class="menu__item" href="#">Специальные цены</a>
-                <a class="menu__item" href="#">Адреса сервисных центров</a>
-                <a class="menu__item" href="#">Отзывы</a>    
-            </menu>
-            <div class="page-headline__item request">
-                <label class="request__lable" for="rq-btn"></label>
-                <button class="request__btn header-btn header-btn--pink request-btn" id="rq-btn"></button>
+    <main class="main">
+        <div class="main__header">
+            <div class="page-headline">
+                <h1 class="page-headline__title">Услуги и сервисы</h1>
+                <div class="page-headline__group-btn">
+                    <div class="page-headline__item request">
+                        <label class="request__lable" for="rq-btn">Оставить заявку</label>
+                        <button class="func-btn func-btn--request func-btn--pink" id="rq-btn"></button>
+                    </div>
+                    <div class="page-headline__item repair-status">
+                        <label class="repair-status__lable" for="rs-btn">Статус ремонта</label>
+                        <button class="func-btn func-btn--repair-status func-btn--pink" id="rs-btn"></button>
+                    </div>
+                </div>
             </div>
-            <div class="page-headline__item repair-status">
-                <label class="repair-status__lable" for="rs-btn"></label>
-                <button class="repair-status__btn header-btn header-btn--pink repair-status-btn" id="rs-btn"></button>
-            </div>
+            <nav class="nav">
+                <a class="nav__item" href="#">Ремонтируемые устройства</a>
+                <a class="nav__item" href="#">Дополнительные услуги</a>
+                <a class="nav__item" href="#">Цены на услуги</a>
+                <a class="nav__item" href="#">Специальные цены</a>
+                <a class="nav__item" href="#">Адреса сервисных центров</a>
+                <a class="nav__item" href="#">Отзывы</a>    
+            </nav>
         </div>
-        <article class="about-us about-us--center">
+        <article class="about-us">
             <h2 class="about-us__title about-us__title--hidden">О нас</h2>
-            <div class="about-us__item description">
+            <div class="description">
                 <p class="description__paragraph">
                     Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
                     Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
@@ -58,16 +62,10 @@
                     что подтверждает большое количество постоянных клентов. Мы гордимся тем, 
                     что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
                 </p>
-
-                <button class="description__item more-btn" id="more-btn">Читать далее</button>
+                <button class="more-btn" id="more-btn">Читать далее</button>
             </div>
-            <img class="about-us__figure" src="/img/CPS_door-sign.png" alt="logo_door-sign" width="320" height="176">
+            <img class="about-us__figure" src="/img/CPS_door-sign.png" alt="logo_door-sign" width="320">
         </article>
     </main>
-
-
-
-
-
 </body>
 </html>
