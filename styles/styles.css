@@ -374,8 +374,8 @@ h1, h2, h3, ul, li {
 }
 
 
-
-/* .func-btn:hover, .more-btn:hover {
+/* 
+.func-btn:hover, .more-btn:hover {
     background-color: green;
 }
 .func-btn:focus {
@@ -424,6 +424,8 @@ h1, h2, h3, ul, li {
     line-height: 150%;
     letter-spacing: -0.01em;
     color: #1b1c21;
+    text-decoration: none;
+    transition: 0.5s;
 }
 
 .services-list__item:hover {
