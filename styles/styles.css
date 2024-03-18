@@ -66,31 +66,31 @@ h1, h2, h3, ul, li {
 }
 
 .func-btn--phone {
-    background-image: url("/practical-work-1/img/handset.svg");
-    /* background-image: url("/img/handset.svg"); */
+    /* background-image: url("/practical-work-1/img/handset.svg"); */
+    background-image: url("/img/handset.svg");
 }
 
 .func-btn--message {
-    background-image: url("/practical-work-1/img/message.svg");
-    /* background-image: url("/img/message.svg"); */
+    /* background-image: url("/practical-work-1/img/message.svg"); */
+    background-image: url("/img/message.svg");
     background-position-y: 11px;
 }
 .func-btn--login {
-    background-image: url("/practical-work-1/img/login.svg");
-    /* background-image: url("/img/login.svg"); */
+    /* background-image: url("/practical-work-1/img/login.svg"); */
+    background-image: url("/img/login.svg");
 }
 
 .func-btn--request {
     background-image: url("/practical-work-1/img/request.svg");
 }
 .func-btn--close {
-    background-image: url("/practical-work-1/img/close.svg");
-    /* background-image: url("/img/close.svg"); */
+    /* background-image: url("/practical-work-1/img/close.svg"); */
+    background-image: url("/img/close.svg");
 }
 
 .func-btn--search {
-    background-image: url("/practical-work-1/img/search.svg");
-    /* background-image: url("/img/search.svg"); */
+    /* background-image: url("/practical-work-1/img/search.svg"); */
+    background-image: url("/img/search.svg");
 }
 
 .func-btn--request:first-child:before {
