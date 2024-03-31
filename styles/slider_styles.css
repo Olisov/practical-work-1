@@ -1,0 +1,160 @@
+body, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+
+.brand-list {
+    box-sizing: border-box;
+    min-width: 320px;
+    padding: 0 16px; 
+}
+
+.brand-list__slider {
+    position: relative;
+    padding-bottom: 16px;
+    overflow: hidden;
+
+}
+
+.brand-list__title {
+    font-family: "TTLakes", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #7e7e82;
+    padding: 14px 0;
+}
+
+.brand-list__body {
+    padding: 16px 0;
+    height: 72px;
+}
+
+.brand-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px;
+    flex-basis: 240px;
+    height: 72px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+}
+
+.brand-item__logo {
+    max-width: 52%;
+}
+
+.details-btn {
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/arrow_to_right.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border-color: #FF3E79;
+}
+
+.swiper-pagination {
+    transform: translateY(45%);
+}
+
+.swiper-pagination-bullet {
+    background-color: DDDDDD;
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #B5B6BC;
+}
+
+.show-all-btn {
+    display: none;
+    padding: 6px 0;
+    width: 134px;
+    text-align: end;
+    font-family: "TT Lakes", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #1b1c21;
+    position: relative;
+    background: none;
+    border: none;
+}
+
+.show-all-btn::before {
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background-image: url(../img/double-arrows.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0px;
+    top: 8px;
+}
+
+
+@media (min-width: 768px) {
+
+    .brand-list {
+        min-width: 768px;
+        padding: 0 24px; 
+    }
+
+    .brand-list__body {
+        padding: 24px 0;
+        height: 152px;
+        column-gap: 24px;
+        row-gap: 16px;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .brand-item {
+        flex-basis: 224px;
+    }
+
+    .swiper-wrapper {
+        transform: none !important;
+    }
+
+    .brand-item__logo {
+        max-width: 60%;
+    }
+
+    .show-all-btn {
+        display: block;
+    }
+
+}
+
+@media (min-width: 1120px)  {
+
+    .brand-list--center {
+        margin: 0 auto;
+    }
+
+    .brand-list {
+        width: 1120px;
+        padding: 0 32px; 
+    }
+
+    .brand-list__body {
+        padding: 24px 0;
+        column-gap: 32px;
+    }
+
+    .brand-item {
+        flex-basis: 240px;
+    }
+}
