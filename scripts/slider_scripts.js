@@ -5,16 +5,14 @@ const showAllBtn = brandList.querySelector('.show-all-btn');
 
 showAllBtn.addEventListener('click', () => {
 
-    if (showAllBtn.getAttribute('short')) {
-        showAllBtn.setAttribute('short', '');
-        brandListBody.style.height = 'auto';
+    if (!showAllBtn.classList.contains('show-all-btn--open')) {
+        showAllBtn.classList.add('show-all-btn--open');
+        brandListBody.classList.add('brand-list__body--extended');
         showAllBtn.textContent = 'Скрыть';
-        showAllBtn.style.width = '94px';
     } else {
-        showAllBtn.setAttribute('short', 'true');
-        brandListBody.style.height = '';
+        showAllBtn.classList.remove('show-all-btn--open');
+        brandListBody.classList.remove('brand-list__body--extended');
         showAllBtn.textContent = 'Показать всё';
-        showAllBtn.style.width = '';
     }
 });
 

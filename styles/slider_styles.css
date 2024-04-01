@@ -103,6 +103,15 @@ body, h2 {
     top: 8px;
 }
 
+.show-all-btn--open { 
+    width: 94px;
+}
+
+
+.show-all-btn--open::before { 
+    transform: rotate(180deg);
+}
+
 
 @media (min-width: 768px) {
 
@@ -120,6 +129,7 @@ body, h2 {
         overflow: hidden;
     }
 
+
     .brand-item {
         flex-basis: 224px;
     }
@@ -136,6 +146,10 @@ body, h2 {
         display: block;
     }
 
+}
+
+.brand-list__body--extended {
+    height: auto;
 }
 
 @media (min-width: 1120px)  {
