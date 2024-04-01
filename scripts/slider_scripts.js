@@ -23,6 +23,7 @@ const slider = new Swiper('.brand-list__slider', {
     },
     slidesPerView: 1.2,
     spaceBetween: '16px',
+    slidesPerView: 'auto',
 
 
     breakpoints: {
